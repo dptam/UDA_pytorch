@@ -235,18 +235,21 @@ class load_data:
             self.unsup_batch_size = cfg.train_batch_size * cfg.unsup_ratio
 
     def sup_data_iter(self):
+        print("Start Sup Data Iter")
         sup_dataset = self.TaskDataset(self.sup_data_dir, self.cfg.need_prepro, self.pipeline, self.cfg.max_seq_length, self.cfg.mode, 'sup')
         sup_data_iter = DataLoader(sup_dataset, batch_size=self.sup_batch_size, shuffle=self.shuffle)
         
         return sup_data_iter
 
     def unsup_data_iter(self):
+        print("Start Unsup Data Iter")
         unsup_dataset = self.TaskDataset(self.unsup_data_dir, self.cfg.need_prepro, self.pipeline, self.cfg.max_seq_length, self.cfg.mode, 'unsup')
         unsup_data_iter = DataLoader(unsup_dataset, batch_size=self.unsup_batch_size, shuffle=self.shuffle)
 
         return unsup_data_iter
 
     def eval_data_iter(self):
+        print("Start Eval Data Iter")
         eval_dataset = self.TaskDataset(self.eval_data_dir, self.cfg.need_prepro, self.pipeline, self.cfg.max_seq_length, 'eval', 'sup')
         eval_data_iter = DataLoader(eval_dataset, batch_size=self.eval_batch_size, shuffle=False)
 
