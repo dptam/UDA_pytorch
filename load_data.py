@@ -21,6 +21,7 @@
 import ast
 import csv
 import itertools
+import pickle
 
 import pandas as pd    # only import when no need_to_preprocessing
 from tqdm import tqdm
