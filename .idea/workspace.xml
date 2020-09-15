@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84be6a4f-8c56-4c71-9389-c627737f2e65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/UDA_pytorch.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imdb_sup_test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imdb_sup_train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/imdb_unsup_train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/logs/data/scalar_group/final_loss/events.out.tfevents.1599708915.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/logs/data/scalar_group/final_loss/events.out.tfevents.1599709222.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/logs/data/scalar_group/lr/events.out.tfevents.1599708915.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/logs/data/scalar_group/lr/events.out.tfevents.1599709222.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/logs/data/scalar_group/sup_loss/events.out.tfevents.1599708915.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/logs/data/scalar_group/sup_loss/events.out.tfevents.1599709222.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/logs/data/scalar_group/unsup_loss/events.out.tfevents.1599708915.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/logs/data/scalar_group/unsup_loss/events.out.tfevents.1599709222.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/logs/events.out.tfevents.1599708912.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results/logs/events.out.tfevents.1599709220.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results_non/logs/data/scalar_group/sup_loss/events.out.tfevents.1599708591.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results_non/logs/data/scalar_group/sup_loss/events.out.tfevents.1599708771.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results_non/logs/data/scalar_group/sup_loss/events.out.tfevents.1599708806.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results_non/logs/data/scalar_group/sup_loss/events.out.tfevents.1599708816.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results_non/logs/events.out.tfevents.1599708590.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results_non/logs/events.out.tfevents.1599708769.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results_non/logs/events.out.tfevents.1599708804.dptam-comp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/results_non/logs/events.out.tfevents.1599708814.dptam-comp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bert_base.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/uda.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/uda.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
