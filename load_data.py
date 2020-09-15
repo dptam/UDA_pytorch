@@ -79,7 +79,7 @@ class CsvDataset(Dataset):
         else:
             f = open(file, 'r', encoding='utf-8')
             data = pd.read_csv(f, sep='\t')
-
+            print(file)
             # supervised dataset
             if d_type == 'sup':
                 # input_ids, segment_ids(input_type_ids), input_mask, input_label
