@@ -78,25 +78,30 @@ class CsvDataset(Dataset):
         # already preprocessed
         else:
             f = open(file, 'r', encoding='utf-8')
-            data = pd.read_csv(f, sep='\t')
-            print(file)
-            # supervised dataset
-            if d_type == 'sup':
-                # input_ids, segment_ids(input_type_ids), input_mask, input_label
-                input_columns = ['input_ids', 'input_type_ids', 'input_mask', 'label_ids']
-                self.tensors = [torch.tensor(data[c].apply(lambda x: ast.literal_eval(x)), dtype=torch.long)    \
-                                                                                for c in input_columns[:-1]]
-                self.tensors.append(torch.tensor(data[input_columns[-1]], dtype=torch.long))
-                
-            # unsupervised dataset
-            elif d_type == 'unsup':
-                input_columns = ['ori_input_ids', 'ori_input_type_ids', 'ori_input_mask',
-                                 'aug_input_ids', 'aug_input_type_ids', 'aug_input_mask']
-                self.tensors = [torch.tensor(data[c].apply(lambda x: ast.literal_eval(x)), dtype=torch.long)    \
-                                                                                for c in input_columns]
-                
-            else:
-                raise "d_type error. (d_type have to sup or unsup)"
+            # data = pd.read_csv(f, sep='\t')
+            # # supervised dataset
+            # if d_type == 'sup':
+            #     # input_ids, segment_ids(input_type_ids), input_mask, input_label
+            #     input_columns = ['input_ids', 'input_type_ids', 'input_mask', 'label_ids']
+            #     self.tensors = [torch.tensor(data[c].apply(lambda x: ast.literal_eval(x)), dtype=torch.long)    \
+            #                                                                     for c in input_columns[:-1]]
+            #     self.tensors.append(torch.tensor(data[input_columns[-1]], dtype=torch.long))
+            #
+            # # unsupervised dataset
+            # elif d_type == 'unsup':
+            #     input_columns = ['ori_input_ids', 'ori_input_type_ids', 'ori_input_mask',
+            #                      'aug_input_ids', 'aug_input_type_ids', 'aug_input_mask']
+            #     self.tensors = [torch.tensor(data[c].apply(lambda x: ast.literal_eval(x)), dtype=torch.long)    \
+            #                                                                     for c in input_columns]
+
+            pk_file = file.replace('txt', 'pk')
+            print(pk_file)
+
+            with open(pk_file, 'rb') as f:
+                self.tensors = pickle.load(f)
+
+            # else:
+            #     raise "d_type error. (d_type have to sup or unsup)"
 
     def __len__(self):
         return self.tensors[0].size(0)
